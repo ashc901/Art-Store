@@ -9,3 +9,5 @@ curl "${API}${URL_PATH}/" \
   --header "Authorization: Bearer ${TOKEN}"
 
 echo
+
+#"https://floating-mountain-26988.herokuapp.com/"

@@ -1,7 +1,7 @@
 # TOKEN=<user token> sh curl-scripts/questions/index.sh
 # get one
 
-API="http://localhost:4741"
+API="https://floating-mountain-26988.herokuapp.com"
 URL_PATH="/products"
 
 curl "${API}${URL_PATH}/${ID}" \
@@ -10,3 +10,5 @@ curl "${API}${URL_PATH}/${ID}" \
   --header "Authorization: Bearer ${TOKEN}"
 
 echo
+
+#"https://floating-mountain-26988.herokuapp.com/"

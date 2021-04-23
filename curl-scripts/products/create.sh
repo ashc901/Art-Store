@@ -1,7 +1,7 @@
 # TOKEN=<user token> sh curl-scripts/questions/index.sh
 # curl script for making a new product
-
-API="http://localhost:4741"
+#v2 do i need to add img stuff?
+API="https://floating-mountain-26988.herokuapp.com"
 URL_PATH="/products"
 
 curl "${API}${URL_PATH}" \
@@ -17,3 +17,5 @@ curl "${API}${URL_PATH}" \
   }'
 
 echo
+
+#"https://floating-mountain-26988.herokuapp.com"
