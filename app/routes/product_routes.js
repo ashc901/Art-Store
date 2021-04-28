@@ -30,7 +30,8 @@ const router = express.Router()
 
 //index GET
 router.get('/products', requireToken, (req, res, next) => {
-  Product.find()
+  const id = req.user.id
+  Product.find({ owner: id })
     .then(products => {
 
       // needs to be a POJO, so .map to apply .toObject to each one
